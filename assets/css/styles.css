@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+
+main{
+    display: flex;
+}
+#search-window{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+}
+
+#weather-window{
+    display: flex;
+    flex-direction: column;
+}
