@@ -5,6 +5,7 @@ h1{
 main{
     display: flex;
 }
+
 #search-window{
     display: flex;
     flex-direction: column;
@@ -14,4 +15,14 @@ main{
 #weather-window{
     display: flex;
     flex-direction: column;
+}
+
+#city-name-display{
+    text-transform: capitalize;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
 }
