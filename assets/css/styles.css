@@ -21,8 +21,24 @@ main{
     text-transform: capitalize;
 }
 
+#five-day-forecast{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#five-day-forecast-header{
+    flex-basis: 100%;
+}
+
 img{
     height: 50px;
     width: 50px;
     vertical-align: middle;
 }
+
+.card{
+    margin: 10px;
+}
+
