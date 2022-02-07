@@ -21,6 +21,13 @@ main{
     text-transform: capitalize;
 }
 
+#current-weather-uvi{
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
 #five-day-forecast{
     display: flex;
     flex-flow: row wrap;
