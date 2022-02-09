@@ -22,17 +22,16 @@ var DateTime = luxon.DateTime;
 
 //Fetch server-side API data
 function handleWeatherSearch(event) {
-    console.log(event.target);
+    
     //Setup API URL to get city coordinates
     cityName = citySearch.val();
 
     //If the user uses a search history button, get the city name from the button
     var target = $(event.target);
-
-    console.log(target);
+    
 
     if(target.text() != ''){
-        cityName = target.text();
+        cityName = target.text().toLowerCase();
     }
 
 
@@ -271,6 +270,10 @@ function handleWeatherSearch(event) {
 
 //Render previous searches
 function renderPreviousSearches(){
+  if (localStorage.getItem('searchedCities') == null){
+      return;
+  }
+
     var cityNames = localStorage.getItem('searchedCities');
     cityNames = cityNames.split(',');
 

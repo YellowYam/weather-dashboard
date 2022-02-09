@@ -36,6 +36,18 @@ main{
     box-shadow: inset -1px -3px 15px 2px white;
 }
 
+#city-search{
+  border: 2px solid blue;
+  border-radius: 5px;
+  min-height: 20px;
+}
+
+.horizontal-line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid blue;
+}
 #weather-window{
     display: flex;
     flex-direction: column;
