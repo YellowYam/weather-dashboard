@@ -1,3 +1,12 @@
+header{
+    background: linear-gradient(0.25turn, darkblue, blue, lightblue);
+    color: white;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1{
     text-align: center;
 }
@@ -10,6 +19,21 @@ main{
     display: flex;
     flex-direction: column;
     max-width: 20%;
+}
+
+#search-button{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 20px;
+    padding: 2px 23px 2px 30px;
+    margin-top: 10px;
+    background: linear-gradient(0.15turn, blue, lightblue);
+    color: white;
+    transition: .3s;
+}
+
+#search-button:hover{
+    box-shadow: inset -1px -3px 15px 2px white;
 }
 
 #weather-window{
@@ -47,5 +71,12 @@ img{
 
 .card{
     margin: 10px;
+    background-color: slateblue;
+    color: white;
+    width: 150px;
+    height: fit-content;
+    padding: 0px 20px 20px 10px;
+    box-shadow: 0 4px 8px 0 rgb(62 77 179);
 }
+
 

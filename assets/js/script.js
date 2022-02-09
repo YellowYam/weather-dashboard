@@ -53,6 +53,10 @@ function handleWeatherSearch(event) {
                 return response.json();
             }
 
+            else{
+                alert('City not found!');
+            }
+
         })
 
         //Extract coordinates from city search
@@ -181,7 +185,7 @@ function handleWeatherSearch(event) {
                     for (let i = 1; i < 6; i++) {
                         var day = $('<div>');
                         day.addClass('card');
-                        day.css('background-color', 'lightblue');
+                    
 
                         var date = $('<h3>');
                         date.text(DateTime.fromSeconds(cityData.daily[i].dt).toLocaleString());
@@ -193,18 +197,18 @@ function handleWeatherSearch(event) {
                             + cityData.daily[i].weather[0].icon + "@2x.png");
                         day.append(weatherIcon);
 
-                        var temp = $('<h3>')
-                        temp.text(cityData.daily[i].temp.day + " °F");
+                        var temp = $('<h4>')
+                        temp.text("Temp: " + cityData.daily[i].temp.day + " °F");
                         temp.attr('class', 'forecasted-weather');
                         day.append(temp);
 
-                        var wind = $('<h3>')
-                        wind.text(cityData.daily[i].wind_speed + " MPH");
+                        var wind = $('<h4>')
+                        wind.text("Wind: " + cityData.daily[i].wind_speed + " MPH");
                         wind.attr('class', 'forecasted-weather');
                         day.append(wind);
 
-                        var humidity = $('<h3>')
-                        humidity.text(cityData.daily[i].humidity + "%");
+                        var humidity = $('<h4>')
+                        humidity.text("Humidity: " + cityData.daily[i].humidity + "%");
                         humidity.attr('class', 'forecasted-weather');
                         day.append(humidity);
 
