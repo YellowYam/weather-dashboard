@@ -4,7 +4,9 @@ and uses jQuery for dynamic page elements.
 
 ## Technologies Used
 [OpenWeather API](https://openweathermap.org/) – to find weather conditions
+
 [Moment.js](https://momentjs.com/) -- to format dates
+
 [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) - to store persistent data
 
 ## Screenshot
