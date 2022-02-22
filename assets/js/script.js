@@ -54,6 +54,7 @@ function handleWeatherSearch(event) {
 
             else{
                 alert('City not found!');
+                citySearch.val('');
             }
 
         })
