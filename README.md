@@ -15,3 +15,6 @@ and uses jQuery for dynamic page elements.
 ## Page Link
 [Weather Dashboard](https://yellowyam.github.io/weather-dashboard/)
 
+## License
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+
