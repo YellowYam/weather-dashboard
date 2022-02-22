@@ -9,8 +9,14 @@ and uses jQuery for dynamic page elements.
 
 [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) - to store persistent data
 
-## Screenshot
-![Weathe Dashboard Screenshot](./assets/images/screenshot.jpg)
+## Screenshots
+
+### A typical forecast
+![Weather Dashboard Screenshot](./assets/images/screenshot.jpg)
+
+### Validation alert
+![Error Validation Screenshot](./assets/images/errorvalidation.png)
+
 
 ## Page Link
 [Weather Dashboard](https://yellowyam.github.io/weather-dashboard/)
